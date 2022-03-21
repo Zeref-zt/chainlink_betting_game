@@ -48,6 +48,7 @@ contract BettingGame is VRFConsumerBase {
     uint256 seed;
     uint256 amount;
     address payable player;
+    uint test;
   }
 
   modifier onlyAdmin() {
