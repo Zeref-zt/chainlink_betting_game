@@ -82,7 +82,7 @@ contract BettingGame is VRFConsumerBase {
   }
   
   /* Allows this contract to receive payments */
-  receive() external payable {
+  function receive() external payable {
     emit Received(msg.sender, msg.value);
   }
   
